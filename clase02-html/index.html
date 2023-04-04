@@ -5,18 +5,31 @@
 <meta charset="UTF-8"> <!-- configuracion del lenguaje -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- responsivo, adapta pag web al usuario -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsivo, adapta pag web al usuario -->
+
+<link rel="stylesheet" href="./css/index.css"> 
+
 <title>html</title> <!-- titulo de la ventana del navegador -->
+
+<style>
+p{ 
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+</style>
+
 </head>
 <body> <!-- cuerpo de la pagina web -->
 
-    <HEAder>
+    <header>
 
-<H2>Soy el Header de la Pagina</H2>
+<h2 class="centrar">Soy el Header de la Pagina</h2>
 
-    </HEAder>
+    </header>
     <nav>
 
-<h2>Soy la navegacioin</h2>
+<h2 class="soloyo">Soy la navegacioin</h2>
+
 <!-- listas desordenadas -->
 
         <ul> 
@@ -32,14 +45,14 @@
 
 <main>
 
-<h1> Etiqueta de Titulo Nivel 1 </h1> 
+<h1 style="color: green; font-size: 60px;"> Etiqueta de Titulo Nivel 1 </h1> 
 <hr>
 <section>
 
-<article>
+<article class="soloyo">
 <h3>Los alimentos</h3>
 <img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p> Lorem ipsum dolor sit,<strong><i><a href="./pages/productos.html#miformulario">Formulario</a></i>i</strong> amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
+<p id="miparrafo"> Lorem ipsum dolor sit,<strong><i><a href="./pages/productos.html#miformulario">Formulario</a></i>i</strong> amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
 <article>
 <article>
 <h3>Los alimentos</h3>
@@ -119,8 +132,11 @@
 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit animi nemo alias iure maxime, praesentium quisquam consequuntur reprehenderit, aliquid totam incidunt aspernatur doloremque culpa facere quaerat ducimus temporibus magnam!</p>
 </section>
+
+<hr>
 
 <!-- LISTAS ORDENADAS -->
+
     <OL>
     
         <LI><a href="">peras</a></LI>
