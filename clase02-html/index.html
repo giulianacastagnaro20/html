@@ -2,154 +2,171 @@
 <!DOCTYPE html> <!-- tipo de archivo o doc:una pag web -->
 <html lang="en"> <!-- apertura de etiqueta -->
 <head>
-<meta charset="UTF-8"> <!-- configuracion del lenguaje -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- responsivo, adapta pag web al usuario -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsivo, adapta pag web al usuario -->
+    <meta charset="UTF-8"> <!-- configuracion del lenguaje -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- responsivo, adapta pag web al usuario -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsivo, adapta pag web al usuario -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 
-<link rel="stylesheet" href="./css/index.css"> 
 
-<title>html</title> <!-- titulo de la ventana del navegador -->
+<!-- Traemos el font desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-<style>
-p{ 
-    color: blue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+<!-- Traemos el font desde Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
 
-</style>
+    <title>html</title> <!-- titulo de la ventana del navegador -->
+
+    <style>
+        p{ 
+            color: blue;
+            font-family: 'Bebas Neue', cursive;
+        }
+    </style>
 
 </head>
 <body> <!-- cuerpo de la pagina web -->
 
     <header>
-
-<h2 class="centrar">Soy el Header de la Pagina</h2>
-
+        <h2 class="centrar">Soy el Header de la Pagina</h2>
     </header>
+
     <nav>
-
-<h2 class="soloyo">Soy la navegacioin</h2>
-
-<!-- listas desordenadas -->
-
-        <ul> 
-
-    <!-- ITEMS LIST -->
-    <!-- ANCLAS:PERMITEN LA NAVEGACION -->
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./pages/productos.html">PRODUCTOS</a></li>
-                <li><a href="./pages/sucursales.html">SUCURSALES</a></li>
-
+        <h2 class="soloyo">Soy la navegacioin</h2>
+        <!-- listas desordenadas -->
+        <ul class="centrar">
+            <!-- ITEMS LIST -->
+            <li>
+                <!-- ANCLAS:PERMITEN LA NAVEGACION -->
+                <a href="./index.html">HOME</a>
+            </li>
+            <li>
+                <a href="./pages/productos.html">PRODUCTOS</a>
+            </li>
+            <li>
+                <a href="./pages/sucursales.html">SUCURSALES</a>
+            </li>
         </ul>
     </nav>
 
-<main>
+    <main>
+        <h1 style="color: green; font-size: 60px;"> 
+            Etiqueta de Titulo Nivel 1 
+        </h1> 
 
-<h1 style="color: green; font-size: 60px;"> Etiqueta de Titulo Nivel 1 </h1> 
-<hr>
-<section>
+        <hr>
 
-<article class="soloyo">
-<h3>Los alimentos</h3>
-<img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p id="miparrafo"> Lorem ipsum dolor sit,<strong><i><a href="./pages/productos.html#miformulario">Formulario</a></i>i</strong> amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<article>
-<article>
-<h3>Los alimentos</h3>
-<img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<article>
+        <section>
+            <article>
+                <h3>Los alimentos</h3>
+                <img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
+                <p id="miparrafo"> 
+                    Lorem ipsum dolor sit,<strong><i><a href="./pages/productos.html#miformulario">Formulario</a></i>i</strong> amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, in doloremque autem, dignissimos saepe eligendi nemo pariatur voluptate quibusdam a doloribus minus mollitia, vero illo officia quisquam voluptates perferendis tempora.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet aliquam officiis quia porro ad et, veritatis id? Doloremque autem, facere, magni nihil omnis nesciunt nemo placeat tempore, quod hic numquam!
+                </p>
+            </article>
 
-<article>
-<h3>Los alimentos</h3>
-<img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<article>
-</section>
+            <article class="soloYo">
+                <h3>Los Alimentos</h3>
+                <img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentación sana">
+                <p class="centrar otroParrafo miColor"> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, veniam est magnam officia, adipisci fuga praesentium illum explicabo cum sed consequuntur cupiditate corporis voluptate sint sapiente culpa, vero consequatur! Consequuntur.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et debitis <strong><i><a href="#main">Main</a></i></strong>quasi deserunt rerum, quos mollitia quam perspiciatis ipsum qui, ad molestiae repellendus placeat vitae distinctio eaque, dolorem ab odit beatae!</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt at, enim quia iure ipsum unde officiis explicabo vero, necessitatibus architecto repudiandae possimus perspiciatis animi est quae, a qui aperiam!
+                </p>  
+            </article>
 
-<hr>
-<section>
+            <article>
+                <h3>Los Alimentos</h3>
+                <img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentación sana">
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, veniam est magnam officia, adipisci fuga praesentium illum explicabo cum sed consequuntur cupiditate corporis voluptate sint sapiente culpa, vero consequatur! Consequuntur.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et debitis quasi deserunt rerum, quos mollitia quam perspiciatis ipsum qui, ad molestiae repellendus placeat vitae distinctio eaque, dolorem ab odit beatae!</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt at, enim quia iure ipsum unde officiis explicabo vero, necessitatibus architecto repudiandae possimus perspiciatis animi est quae, a qui aperiam!
+                </p>  
+            </article>
+        </section>
 
-<article>
-<h3>Los alimentos</h3>
-<img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<article>
-<article>
-<h3>Los alimentos</h3>
-<img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<article>
+        <hr>
 
-<article>
-<h3>Los alimentos</h3>
-<img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<article>
+        <section>
+            <article>
+                <h3>Los alimentos</h3>
+                <img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+            </article>
 
+            <article>
+                <h3>Los alimentos</h3>
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+            </article>
 
-</section>
+            <article>
+                <h3>Los alimentos</h3>
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? 
+                </p>
+            </article>
+        </section>
 
-<hr>
+        <hr>
 
-<section>
+        <h2 id="main">Soy el Main</h2>
+        <h2> Etiqueta de Nivel 2 </h2>
+        <h3> Hola </h3>
+        <h4> Hola </h4>
+        <h5> Hola </h5>
+        <h6> Hola </h6>
 
-<article>
-<h3>Los alimentos</h3>
-<img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<article>
-<article>
-<h3>Los alimentos</h3>
-<img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<article>
+        <hr>
 
-<article>
-<h3>Los alimentos</h3>
-<img src="https://media.tycsports.com/files/2023/03/24/548718/lionel-messi-antonel-roccuzzo_416x234.webp" alt="imagen de una alimentacion sana">
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<article>
+        <!-- listas ordenadas -->
+        <ol>   
+            <li><a href="">peras</a></li>
+            <li><a href="">sandias</a></li>
+            <li><a href="">bananas</a></li>
+        </ol>
 
-
-</section>
-
-<h2>Soy el Main</h2>
-
-</article>
-<article>
-<h3>Los alimentos</h3>
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit animi nemo alias iure maxime, praesentium quisquam consequuntur reprehenderit, aliquid totam incidunt aspernatur doloremque culpa facere quaerat ducimus temporibus magnam!</p>
-</section>
-</section>
-
-<h2>Soy el Main</h2>
-
-</article>
-<article>
-<h3>Los alimentos</h3>
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, deserunt ducimus? Voluptatibus consequatur nobis saepe facilis sunt fugiat at asperiores quos maxime beatae culpa ducimus accusamus consequuntur nesciunt, quia obcaecati? </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit animi nemo alias iure maxime, praesentium quisquam consequuntur reprehenderit, aliquid totam incidunt aspernatur doloremque culpa facere quaerat ducimus temporibus magnam!</p>
-</section>
-
-<hr>
-
-<!-- LISTAS ORDENADAS -->
-
-    <OL>
-    
-        <LI><a href="">peras</a></LI>
-        <li><a href="">sandias</a></li>
-        <li><a href="">bananas</a></li>
-
-    </OL>
-
-</main>
+    </main>
 
     <footer>
-        <h2>soy el pie de pagina</h2>
+        <h2>Soy el Pie de Pagina</h2>
     </footer>
 
 </body>
-</html>
+</html> <!-- cierre de etiquetas -->
